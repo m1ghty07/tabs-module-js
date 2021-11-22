@@ -9,10 +9,14 @@ const tabs = (tabsSelector, tabsContentSelector) => {
     tabsContent.forEach(item => {
       item.style.display = 'none';
     });
+    tabs.forEach(item => {
+      item.classList.remove('active');
+    });
   }
 
   function displayContent(i = 0) {
     tabsContent[i].style.display = 'block';
+    tabs[i].classList.add('active');
   }
 
   hideContent();

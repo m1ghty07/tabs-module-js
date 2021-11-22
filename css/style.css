@@ -80,6 +80,10 @@ body {
    background-color: rgba(173, 216, 230, 0.452);
 }
 
+.active {
+  background-color: rgba(173, 216, 230, 0.452);
+}
+
 .tabs__content {
   margin: 60px 0;
 }
